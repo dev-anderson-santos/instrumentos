@@ -1,4 +1,4 @@
 # Site estático de instrumentos musicais
 • HTML<br/>
-• CSS
+• CSS<br/>
 • JavaScript (Pouco código)
