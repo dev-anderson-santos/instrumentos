@@ -5,7 +5,7 @@
 <title>Dó Ré Mi - Artigos musicais</title>
 <meta name="keywords" content="Dó Ré Mi artigos musicais" />
 <meta name="description" content="Site de compra de artigos musicias" />
-<link href="css/visualiza_produto.css" rel="stylesheet" type="text/css" />
+<link href="../css/visualiza_produto.css" rel="stylesheet" type="text/css" />
 
 <script language="javascript">
 	function add(){
@@ -115,9 +115,9 @@
     <div class="catViolao"><a href="index.html">Home</a> ›› Violão Ac&uacute;stico Giannini S14 A&ccedil;o - Preto</div><!-- fim catViolao -->
 		<div id="v1_compra">
               <div class="camada_compra">
-                <a href="#"><em><img src="img/violao/v1_grande.jpg" width = "390px" height = "415px"/></em>
+                <a href="#"><em><img src="../img/violao/v1_grande.jpg" width = "390px" height = "415px"/></em>
                 <span>
-                <img src="img/violao/v1_grande.jpg" width = "780px" height = "830px"/>
+                <img src="../img/violao/v1_grande.jpg" width = "780px" height = "830px"/>
                 </span>
                 </a>
               </div><!-- fim da camada_compra -->
