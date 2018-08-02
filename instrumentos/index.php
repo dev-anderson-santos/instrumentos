@@ -1,4 +1,5 @@
 <?php require_once "lib.php"; ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -15,8 +16,10 @@
   load_js('jquery');
   load_js('geral');
 
+  $dao = new DAO();
+  $t = $dao->select("SELECT * FROM paineladmin_usuario");
+  echo json_encode($t);
 ?>
-
 </head>
 
 <body>
@@ -29,21 +32,12 @@
     	<a href="#">Minha conta | </a> 
     	<a href="#">Meus Pedidos | </a> 
     	<a href="#">Meu carrinho (0)</a>
-        
-   	  <div id="login">
-        	<form method="post">
-            	<h3>Efetue o seu login</h3>
-       	  		<label>Login</label>
-        		<input type="text" name="emailLogin" placeholder="E-mail" align="left" width="30" height="10"  />
-                <br />
-                <label>Senha</label>
-                <input type="password" name="senhaLogin" placeholder="Senha" align="left" width="30" height="10"  />
-                <div class="botao">
-                	<a href="#">CONFIRMA</a>
-                </div><!-- fim do botao -->          
-      		</form>
-            <a href="cadastro.php" title="Cadastre-se"> Cadastre-se</a>
-      	</div><!-- fim do login -->        
+
+      <div id="login">
+        <?php load_modulo('usuario', 'login'); ?>
+        <a href="<?=VIEW_PATH.'cadastro.php'?>" title="Cadastre-se"> Cadastre-se</a>
+      </div><!-- fim do login -->
+
     </div><!-- fim do contaPedidos -->
   </div><!-- fim do menu -->
   
@@ -114,7 +108,7 @@
     <div class="catHome">Home</div><!-- fim catHome -->
 		<div id="v1">
               <div class="camada1">
-                <a href="violao-acustico-giannini.php" title="Viol&atilde;o Ac&uacute;stico Giannini S14 A&ccedil;o – Preto"><img src="../img/violao/v1.jpg" width = "200px" height = "200px"/></a>
+                <a href="<?= VIEW_PATH.'violao-acustico-giannini.php'?>" title="Viol&atilde;o Ac&uacute;stico Giannini S14 A&ccedil;o – Preto"><img src="../img/violao/v1.jpg" width = "200px" height = "200px"/></a>
               </div><!-- fim da camada1 -->
               <div class="info">
                 <a href="violao-acustico-giannini.php">Viol&atilde;o Ac&uacute;stico Giannini S14 A&ccedil;o – Preto</a>

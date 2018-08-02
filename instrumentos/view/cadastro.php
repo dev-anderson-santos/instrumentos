@@ -1,3 +1,5 @@
+<?php require_once "../lib.php"; ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,7 +7,7 @@
 <title>Dó Ré Mi - Artigos musicais - Cadastro</title>
 <meta name="keywords" content="Dó Ré Mi artigos musicais" />
 <meta name="description" content="Site de compra de artigos musicias" />
-<link href="css/cadastro.css" rel="stylesheet" type="text/css" />
+<!--link href="css/cadastro.css" rel="stylesheet" type="text/css" /-->
 
 <script>
 	
@@ -14,13 +16,21 @@
 	}
 </script>
 
+<?php 
+  //load_css('reset');
+  load_css('bootstrap');
+  load_css('cadastro'); 
+  load_js('jquery');
+  load_js('geral');
+?>
+
 </head>
 
 <body>
 <div id="pagina">
   <div id="topo">
   	<h1 class="logo">
-    	<a href="index.html"><img src="img/logo4.png" title="Dó Ré Mi" alt="Dó Ré Mi - Artigos musicias" width="300" height="200"/>
+    	<a href="../index.php"><img src="../img/logo4.png" title="Dó Ré Mi" alt="Dó Ré Mi - Artigos musicias" width="300" height="200"/>
     </h1>
   	<div class="contaPedidos">
     	<a href="#">Minha conta | </a> 
